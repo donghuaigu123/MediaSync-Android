@@ -5,6 +5,7 @@ local.properties
 *.iml
 *.jks
 *.keystore
+*.idsig
 .DS_Store
 captures/
 .externalNativeBuild

@@ -62,12 +62,15 @@ fi
   --ks "$KS" --ks-key-alias mediasync \
   --ks-pass "pass:$STOREPASS" --key-pass "pass:$STOREPASS" \
   --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
+  --v4-signing-enabled false \
   --out "$OUT" "$BUILD/aligned.apk"
 
 echo "==> 7/7 校验"
-"$BT/apksigner" verify --verbose "$OUT" | head -12
+"$BT/apksigner" verify --verbose "$OUT" > "$BUILD/verify.txt" 2>&1
+grep -E "Verifies|Verified using v[123]|Number of signers" "$BUILD/verify.txt" || true
 echo
-"$BT/aapt2" dump badging "$OUT" | head -6
+"$BT/aapt2" dump badging "$OUT" > "$BUILD/badging.txt"
+head -6 "$BUILD/badging.txt"
 echo
 echo "构建完成： $OUT"
 ls -lh "$OUT"
