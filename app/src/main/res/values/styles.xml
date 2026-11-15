@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MediaSync.Light" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="msBg">@color/light_bg</item>
+        <item name="msCard">@color/light_card</item>
+        <item name="msText">@color/light_text</item>
+        <item name="msSub">@color/light_sub</item>
+        <item name="msLine">@color/light_line</item>
+        <item name="msInput">@color/light_input</item>
+        <item name="msBar">@color/light_bar</item>
+        <item name="msAccent">@color/brand</item>
+        <item name="android:colorAccent">@color/brand</item>
+        <item name="android:statusBarColor">@color/light_bar</item>
+        <item name="android:navigationBarColor">@color/light_bar</item>
+        <item name="android:windowBackground">@color/light_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorPrimary">@color/light_text</item>
+        <item name="android:textColorSecondary">@color/light_sub</item>
+    </style>
+
+    <style name="Theme.MediaSync.Dark" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="msBg">@color/dark_bg</item>
+        <item name="msCard">@color/dark_card</item>
+        <item name="msText">@color/dark_text</item>
+        <item name="msSub">@color/dark_sub</item>
+        <item name="msLine">@color/dark_line</item>
+        <item name="msInput">@color/dark_input</item>
+        <item name="msBar">@color/dark_bar</item>
+        <item name="msAccent">@color/brand_light</item>
+        <item name="android:colorAccent">@color/brand_light</item>
+        <item name="android:statusBarColor">@color/dark_bar</item>
+        <item name="android:navigationBarColor">@color/dark_bar</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:textColorPrimary">@color/dark_text</item>
+        <item name="android:textColorSecondary">@color/dark_sub</item>
+    </style>
+</resources>

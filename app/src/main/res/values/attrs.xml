@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="msBg" format="color" />
+    <attr name="msCard" format="color" />
+    <attr name="msText" format="color" />
+    <attr name="msSub" format="color" />
+    <attr name="msLine" format="color" />
+    <attr name="msInput" format="color" />
+    <attr name="msBar" format="color" />
+    <attr name="msAccent" format="color" />
+</resources>

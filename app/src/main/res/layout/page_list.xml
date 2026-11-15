@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingLeft="16dp" android:paddingRight="16dp"
+        android:paddingTop="8dp" android:paddingBottom="8dp">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/pageTitle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textStyle="bold"
+                android:textColor="?attr/msText" />
+            <TextView android:id="@+id/pageDesc"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:textSize="11sp"
+                android:textColor="?attr/msSub" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/btnAdd"
+            android:layout_width="wrap_content" android:layout_height="34dp"
+            android:gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp"
+            android:text="＋ 添加" android:textSize="13sp" android:textStyle="bold"
+            android:textColor="@color/white" android:tag="brand" />
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/pageList"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:divider="@null" android:dividerHeight="0dp" />
+        <TextView android:id="@android:id/empty"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center" android:textSize="13sp" android:lineSpacingExtra="6dp"
+            android:textColor="?attr/msSub" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#7054EC</color>
+    <color name="brand_dark">#4B32C3</color>
+    <color name="brand_light">#9B86FF</color>
+    <color name="accent">#10CABA</color>
+
+    <color name="light_bg">#F4F5F9</color>
+    <color name="light_card">#FFFFFF</color>
+    <color name="light_text">#1B1D28</color>
+    <color name="light_sub">#787E8E</color>
+    <color name="light_line">#E6E8F0</color>
+    <color name="light_input">#EFF1F7</color>
+    <color name="light_bar">#FFFFFF</color>
+
+    <color name="dark_bg">#0F1117</color>
+    <color name="dark_card">#1B1E28</color>
+    <color name="dark_text">#EEF0F7</color>
+    <color name="dark_sub">#9198A8</color>
+    <color name="dark_line">#2A2E3B</color>
+    <color name="dark_input">#252936</color>
+    <color name="dark_bar">#171A23</color>
+
+    <color name="ok">#16B981</color>
+    <color name="warn">#F59E0B</color>
+    <color name="err">#EF5350</color>
+    <color name="white">#FFFFFF</color>
+</resources>

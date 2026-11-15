@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/msBg">
+
+    <!-- 顶部标题栏 -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="14dp"
+        android:background="?attr/msBar">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="?attr/msText" />
+
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btnServer"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="完整版"
+            android:textSize="13sp"
+            android:textColor="?attr/msText"
+            android:tag="soft" />
+
+        <TextView
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="设置"
+            android:textSize="13sp"
+            android:textColor="?attr/msText"
+            android:tag="soft" />
+    </LinearLayout>
+
+    <!-- 服务器连接状态条 -->
+    <TextView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="12sp"
+        android:textColor="?attr/msSub"
+        android:background="?attr/msBg" />
+
+    <FrameLayout
+        android:id="@+id/pageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 底部导航 -->
+    <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="?attr/msBar">
+
+        <LinearLayout android:id="@+id/tabParse" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_parse" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:text="@string/tab_parse" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabTasks" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_tasks" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:text="@string/tab_tasks" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabSubscribe" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_subscribe" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:text="@string/tab_subscribe" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabLive" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_live" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:text="@string/tab_live" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabFiles" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_files" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:text="@string/tab_files" android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

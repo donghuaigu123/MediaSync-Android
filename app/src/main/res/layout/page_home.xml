@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:tag="card">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从发现、下载到自动归档"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?attr/msText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="多平台媒体解析 · 批量下载 · 订阅同步 · 直播录制 · 文件管理"
+                android:textSize="12sp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="?attr/msSub" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:tag="card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="媒体链接"
+                android:textSize="12sp"
+                android:textColor="?attr/msSub" />
+
+            <EditText
+                android:id="@+id/urlInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minLines="2"
+                android:maxLines="6"
+                android:gravity="top|start"
+                android:hint="粘贴视频、图片或合集链接；多行可批量解析"
+                android:inputType="textUri|textMultiLine"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:textColor="?attr/msText"
+                android:textColorHint="?attr/msSub"
+                android:background="@null"
+                android:tag="input" />
+
+            <TextView
+                android:id="@+id/platformHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="等待输入链接"
+                android:textSize="12sp"
+                android:textColor="?attr/msSub" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnAnalyze"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="解析链接"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:tag="brand" />
+
+                <TextView
+                    android:id="@+id/btnBatch"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="批量加入下载"
+                    android:textSize="14sp"
+                    android:textColor="?attr/msText"
+                    android:tag="soft" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/btnPaste" android:layout_width="wrap_content" android:layout_height="32dp"
+                    android:gravity="center" android:paddingLeft="12dp" android:paddingRight="12dp"
+                    android:text="粘贴" android:textSize="12sp" android:textColor="?attr/msSub" android:tag="badge" />
+                <TextView android:id="@+id/btnExample" android:layout_width="wrap_content" android:layout_height="32dp"
+                    android:layout_marginLeft="8dp" android:gravity="center" android:paddingLeft="12dp" android:paddingRight="12dp"
+                    android:text="示例直链" android:textSize="12sp" android:textColor="?attr/msSub" android:tag="badge" />
+                <TextView android:id="@+id/btnClear" android:layout_width="wrap_content" android:layout_height="32dp"
+                    android:layout_marginLeft="8dp" android:gravity="center" android:paddingLeft="12dp" android:paddingRight="12dp"
+                    android:text="清空" android:textSize="12sp" android:textColor="?attr/msSub" android:tag="badge" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resultArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="2dp"
+            android:text="快捷功能"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="?attr/msText" />
+
+        <LinearLayout android:id="@+id/quickGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="2dp"
+            android:text="支持平台"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="?attr/msText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="14dp"
+            android:text="Bilibili · YouTube · 抖音 · 小红书 · Twitter/X · Instagram · Pinterest · 微博 · 微信视频号/公众号 · Telegram · 新片场 · 优酷/爱奇艺/腾讯视频/央视频 · 通用直链 / M3U8 / MPD"
+            android:textSize="12sp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="?attr/msSub"
+            android:tag="card" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:text="说明：平台登录态、高清画质与合集解析需由 MediaSync 服务端完成。在「设置」中填入自托管服务地址，或点击顶部「完整版」直接使用完整 Web 界面。通用媒体直链可在本地直接下载。"
+            android:textSize="11sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="?attr/msSub"
+            android:tag="soft" />
+    </LinearLayout>
+</ScrollView>
